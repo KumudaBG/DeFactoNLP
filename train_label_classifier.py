@@ -189,14 +189,14 @@ def predict_test(predictions_test, entailment_predictions_test, new_predictions_
             i += 1
 
 
-predictions_train = "predictions/predictions_train.jsonl"
+predictions_train = "/content/DeFactoNLP/predictions/predictions_train.jsonl"
 
-gold_train = "data/subsample_train_concatenation_oie_sentence_final.jsonl"
-entailment_predictions_train = "rte/entailment_predictions_train_concatenate_oie_triple"
+gold_train = "/content/DeFactoNLP/data/subsample_train_concatenation_oie_sentence_final.jsonl"
+entailment_predictions_train = "/content/DeFactoNLP/rte/entailment_predictions_train_concatenate_oie_triple"
 
-predictions_test = "data/dev_sentence_selection_final.jsonl"
-entailment_predictions_test = "rte/entailment_predictions"
-new_predictions_file = "predictions/new_dev_bert_test.jsonl"
+predictions_test = "/content/DeFactoNLP/data/dev_sentence_selection_final.jsonl"
+entailment_predictions_test = "/content/DeFactoNLP/rte/entailment_predictions"
+new_predictions_file = "/content/DeFactoNLP/predictions/new_dev_bert_test.jsonl"
 
 x_train, y_train = populate_train(gold_train, entailment_predictions_train)
 # x_test = x_train[7000:]
