@@ -12,15 +12,15 @@ train_predictions_file = []
 if len(sys.argv) - 1 == 1:
     type_file = sys.argv[1]
     if type_file == 'train':
-        train_file = "data/subsample_train.jsonl"
-        train_relevant_file = "data/subsample_train_relevant_docs.jsonl"
-        train_concatenate_file = "data/subsample_train_concatenation.jsonl"
-        train_predictions_file = "predictions/predictions_train.jsonl"
+        train_file = "/content/DeFactoNLP/data/subsample_train.jsonl"
+        train_relevant_file = "/content/DeFactoNLP/data/subsample_train_relevant_docs.jsonl"
+        train_concatenate_file = "/content/DeFactoNLP/data/subsample_train_concatenation.jsonl"
+        train_predictions_file = "/content/DeFactoNLP/predictions/predictions_train.jsonl"
     else:  # type_file == 'dev':
-        train_file = "data/dev.jsonl"
-        train_relevant_file = "data/dev_relevant_docs.jsonl"
-        train_concatenate_file = "data/dev_sentence_selection.jsonl"
-        train_predictions_file = "predictions/new_dev_bert_test.jsonl"
+        train_file = "/content/DeFactoNLP/data/dev.jsonl"
+        train_relevant_file = "/content/DeFactoNLP/data/dev_relevant_docs.jsonl"
+        train_concatenate_file = "/content/DeFactoNLP/data/dev_sentence_selection.jsonl"
+        train_predictions_file = "/content/DeFactoNLP/predictions/new_dev_bert_test.jsonl"
 else:
     print("Needs to have one argument. Choose:")
     print("train")
